@@ -1,0 +1,9 @@
+body {
+  width: 100vw;
+  min-height: 100vh;
+  /* background-color: #261024; */
+  /* background: linear-gradient(135deg, #261024, #0c071b, #162134); */
+  /* background: linear-gradient(135deg, #261024 20%, #0c071b 50%, #20304c 90%); */
+  color: white;
+}
+
