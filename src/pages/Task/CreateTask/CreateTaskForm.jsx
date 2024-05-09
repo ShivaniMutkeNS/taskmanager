@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 // import { Formik, Form, Field } from "formik";
 import {
   TextField,
@@ -36,7 +37,6 @@ const style = {
   width: 400,
   bgcolor: "background.paper",
   border: "none",
-  boxShadow: 24,
   outline: "none",
   p: 4,
   boxShadow: "rgba(215, 106, 255, 0.507) 0px 0px 100px",
@@ -102,6 +102,9 @@ const CreateTaskForm = ({ open, handleClose }) => {
   };
 
   const handleSubmit = (e) => {
+    validationSchema.validateSync(formData, alert("Few fields are missing"));
+    // If validation is successful, create a new task
+    console.log("Form data:", formData);
     e.preventDefault();
     const { deadline } = formData;
     formData.deadline = formatDate(deadline);

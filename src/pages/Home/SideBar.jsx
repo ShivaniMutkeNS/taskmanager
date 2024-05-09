@@ -58,8 +58,8 @@ const SideBar = () => {
         <div className="flex justify-center">
           <Avatar
             sx={{ width: "8rem", height: "8rem" }}
-            className="border-2 border-[#c24dd0]"
-            src="https://res.cloudinary.com/dxoqwusir/image/upload/v1703852575/Code_With_Zosh_e0bbz7.png"
+            className="border-2 border-[#E7EE17]"
+            src="https://cdn.iconscout.com/icon/premium/png-256-thumb/task-manager-8191267-6804539.png"
             alt=""
           />
         </div>
@@ -70,7 +70,7 @@ const SideBar = () => {
           .map((item) => (
             <p
               onClick={() => handleMenuChange(item)}
-              className={`py-3 px-5 rounded-full text-center cursor-pointer ${
+              className={`py-3 px-5 rounded-full text-center  cursor-pointer ${
                 activeMenu === item.name ? "activeMenuItem" : "menuItem"
               }`}
             >
@@ -81,7 +81,7 @@ const SideBar = () => {
           variant="outlined"
           className="logoutButton"
           fullWidth
-          sx={{ padding: ".7rem", borderRadius: "2rem", color: "white" }}
+          sx={{ padding: ".7rem", borderRadius: "5rem", color: "white" }}
           onClick={handleLogout}
         >
           {"Logout"}

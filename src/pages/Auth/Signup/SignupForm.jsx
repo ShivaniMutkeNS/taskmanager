@@ -5,7 +5,7 @@ import { register } from "../../../ReduxToolkit/AuthSlice";
 
 const SignupForm = ({ togglePanel }) => {
   const dispatch = useDispatch();
-
+  const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -59,12 +59,13 @@ const SignupForm = ({ togglePanel }) => {
 
   return (
     <div className="">
-      <h1 className="text-lg font-bold text-center pb-8 textStyle">Signup</h1>
+      <h1 className=" font-bold text-center text-blue-500 pb-8 textStyle ">Signup</h1>
       <form onSubmit={handleSubmit} className="space-y-3">
         <TextField
           fullWidth
           label="Full Name"
           name="fullName"
+          className={"bg-black"}
           value={formData.fullName}
           onChange={handleChange}
           error={!!errors.fullName}
@@ -77,6 +78,7 @@ const SignupForm = ({ togglePanel }) => {
           label="Email"
           name="email"
           type="email"
+          className={"bg-black"}
           value={formData.email}
           onChange={handleChange}
           error={!!errors.email}
@@ -84,11 +86,12 @@ const SignupForm = ({ togglePanel }) => {
           placeholder="Enter your email"
         />
         <FormControl fullWidth>
-  <InputLabel htmlFor="role">Role</InputLabel>
+  <InputLabel htmlFor="role" >Role</InputLabel>
   <Select
     label="Role"
     name="role"
     id="role"
+    className={"bg-black"}
     value={formData.role}
     onChange={handleChange}
     error={!!errors.role}
@@ -98,19 +101,23 @@ const SignupForm = ({ togglePanel }) => {
     <MenuItem value="ROLE_ADMIN">ADMIN</MenuItem>
     {/* Add more MenuItem components for other roles */}
   </Select>
-  {errors.role && <div style={{ color: 'red' }}>{errors.role}</div>}
+  {errors.role && <div style={{ color: 'yellowgreen' }}>{errors.role}</div>}
 </FormControl>
         <TextField
           fullWidth
           label="Password"
           name="password"
-          type="password"
+          type={showPassword? "text" : "password"}
+          className={"bg-black"}
           value={formData.password}
           onChange={handleChange}
           error={!!errors.password}
           helperText={errors.password}
           placeholder="Enter your password"
         />
+        <Button onClick={() => setShowPassword(!showPassword)}>
+          {showPassword? "Hide Password" : "Show Password"}
+        </Button>
 
         <div>
           <Button

@@ -6,4 +6,7 @@ body {
   /* background: linear-gradient(135deg, #261024 20%, #0c071b 50%, #20304c 90%); */
   color: white;
 }
+.text-custom-blue {
+  color: #430D71;
+}
 

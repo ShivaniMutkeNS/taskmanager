@@ -33,7 +33,6 @@ const style = {
   width: 400,
   bgcolor: "background.paper",
   border: "none",
-  boxShadow: 24,
   outline: "none",
   p: 4,
   boxShadow: "rgba(215, 106, 255, 0.507) 0px 0px 100px",

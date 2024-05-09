@@ -17,19 +17,19 @@ const Auth = () => {
           <div class="front">
             <img
               class=""
-              src="https://images.pexels.com/photos/13073600/pexels-photo-13073600.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs0wS3bsb_kw-LkYQQd1d8Zyn9qn8a2sYbEqyBNAwrr-3AktBKgdu_HApxC3BQJZkcwIk&usqp=CAU"
               alt=""
             />
             <div class="text">
               <span class="text-1">
-              Success is built upon well-organized tasks
+              Welcome to Manage Task! Stay organized and productive with our intuitive task management platform. Easily create, assign, and track tasks to streamline your workflow and achieve your goals efficiently.
               </span>
-              <span class="text-2 text-xs">Let's get connected </span>
+              <span class="text-2 text-xl">  Let's get started!</span>
             </div>
           </div>
           <div class="back">
             <img
-              src="https://images.pexels.com/photos/12679942/pexels-photo-12679942.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              src="https://png.pngtree.com/background/20230613/original/pngtree-artistic-wallpapers-picture-image_3429089.jpg"
               alt=""
             />
           </div>

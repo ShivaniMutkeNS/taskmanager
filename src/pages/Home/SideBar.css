@@ -1,24 +1,26 @@
 .menuItem{
-    
-    border: 2px solid #c24dd0;
+    background-image: linear-gradient(135deg, #6C07E4, #0c071b);
+    border: 2px solid #ECD512;
 }
 
 
 
 .activeMenuItem{
     color: white ;
-    background-image: linear-gradient(135deg, #c24dd0, #7a72fa);
+    background-image: linear-gradient(135deg, #6C07E4, #FF9033);
+    border: 4px solid #FF9033;
     /* background: transparent; */
 }
 
 .logoutButton{
-    color: white !important;
-    background-image: linear-gradient(135deg, #c24dd0, #ff005d);
+    color: black !important;
+    font-weight: bold;
+    background-image: linear-gradient(135deg, #ECD512, #07E1E4);
     /* background: transparent; */
   }
   .customeButton{
     color: white !important;
-    background-image: linear-gradient(150deg, #c24dd0, #7a72fa);
+    background-image: linear-gradient(150deg, #6C07E4, #7a72fa);
     
   }
 

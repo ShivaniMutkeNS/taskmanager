@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   
-  background: linear-gradient(135deg, #1a0b19, #150d2d, #162134) !important;
+  background: linear-gradient(135deg, #ffffff, #150d2d, #162134) !important;
   color: white !important;
   min-height: 100vh !important;
   overflow-x: hidden !important;
@@ -14,7 +14,7 @@ body {
 }
 
 .textColor{
-  background: linear-gradient(135deg, #f9c0ff, #7a72fa);
+  background: linear-gradient(135deg, #1a0b19, #7a72fa);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -28,8 +28,8 @@ code {
   /* background-color: #261024; */
 
   /* Gradient */
-  background-color: #0c071b;
-  box-shadow: rgba(215, 106, 255, 0.507) 0px 0px 20px;
+  background-color: #510E78;
+  box-shadow: #ADEEF0 0px 0px 20px;
   padding: 1rem;
   border-radius: 5px;
   /* text-align: center; */

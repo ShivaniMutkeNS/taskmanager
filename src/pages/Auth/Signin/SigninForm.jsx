@@ -5,6 +5,7 @@ import { login } from "../../../ReduxToolkit/AuthSlice";
 
 const LoginForm = ({ togglePanel }) => {
   const dispatch = useDispatch();
+  const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -45,10 +46,11 @@ const LoginForm = ({ togglePanel }) => {
 
   return (
     <div className="">
-      <h1 className="text-lg font-bold text-center pb-8 textStyle">Login</h1>
+      <h1 className=" text-lg font-bold text-center pb-8 textStyle">Login</h1>
       <form className="space-y-3" onSubmit={handleSubmit}>
         <TextField
           fullWidth
+          className={"bg-black"}
           label="Email"
           name="email"
           type="email"
@@ -60,17 +62,20 @@ const LoginForm = ({ togglePanel }) => {
         />
 
         <TextField
-          fullWidth
-          label="Password"
-          name="password"
-          type="password"
-          value={formData.password}
-          onChange={handleChange}
-          error={!!errors.password}
-          helperText={errors.password}
-          placeholder="Enter your password"
+            fullWidth
+            className={"bg-black"}
+            label="Password"
+            name="password"
+            type={showPassword? "text" : "password"}
+            value={formData.password}
+            onChange={handleChange}
+            error={!!errors.password}
+            helperText={errors.password}
+            placeholder="Enter your password"
         />
-
+        <Button onClick={() => setShowPassword(!showPassword)}>
+          {showPassword? "Hide Password" : "Show Password"}
+        </Button>
         <div>
           <Button
             sx={{ padding: ".7rem 0rem" }}
